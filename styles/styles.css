@@ -1,9 +1,37 @@
 nav {
-    display: flex; 
+    vertical-align: middle;
+    text-align: center;
+    display: grid; 
+    grid-template-areas: "header header header header header header header";
+    grid-template-columns: auto auto 1fr auto auto auto auto;
+}
+
+nav div {
+    padding: 1em;
+}
+
+main {
+    text-align: center;
 }
 
 footer {
-    position: absolute;
-    bottom: 0px;
-    display: flex; 
+    text-align: center;
+    vertical-align: middle;
+    display: grid;
+    grid-template-areas:    "country country country country country country country"
+                            "Ads business howWorks carbNeutral privacy terms settings";
+    grid-template-columns: auto auto auto 1fr auto auto auto;
+}
+
+footer div {
+    padding: 1em;
+}
+
+footer img {
+    max-height: 12px;
+}
+
+.country {
+    text-align: left;
+    grid-column: country;
 }
